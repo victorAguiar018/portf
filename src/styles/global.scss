@@ -5,12 +5,13 @@
 }
 
 :root {
-    --white-50: #FAF5FF;
+    --white-50: #FFFFFF;
     --black-void: #0E0B16;
     --blue-jewel: #4717F6;
     --blue-500: #052034;
     --gray: #29292e;
     --purple-900: #292176;
+
 }
 
 @media(max-width: 1080px){
@@ -35,6 +36,8 @@ body, input, textarea, select, button{
 
 button{
     cursor: pointer;
+    background-color: var(--black-void);
+    color: var(--white-50);
 }
 
 a{

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Header } from '../components/Header'
+import { PageHome } from './PageHome'
 
 
 export default function Home() {
@@ -8,11 +9,8 @@ export default function Home() {
         <>
           <Head>
             <title>Portfólios | Victor Aguiar</title>
-            
           </Head>
-          <main>
-            
-          </main>
+          <PageHome/>
         </>
     </div>
   )

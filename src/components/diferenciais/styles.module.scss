@@ -1,0 +1,107 @@
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.container{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 1rem;
+
+    .diferencias{
+        width: 30rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 6rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(var(--blue-jewel),var(--white-50));
+            animation: rotate 7s linear infinite;
+            border-radius: 10px;
+            
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            background: var(--black-void);
+            inset: 2px;
+            border-radius: 6px;
+        }
+        h1{
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 10px var(--blue-jewel);
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin:  auto;
+            z-index: 1;
+        }
+    }
+    
+    .content{
+        max-width: 1120px;
+        height: 20rem;
+        margin:  auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5rem;
+
+        .contentItem{
+            max-width: 404px;
+            position: relative;
+            margin: 20px auto;
+            width: 100%;
+            height: 400px;
+            box-shadow: 
+                inset 5px 5px 5px rgb(0 0 0 / 50%), 
+                inset -5px -5px 5px rgb(27 27 27 / 50%), 
+                5px 5px 5px rgb(0 0 0 / 5%), 
+                -5px -5px 5px rgb(27 27 27 / 50%);
+            
+            
+            border-radius: 15px;
+            padding: 20px;
+            margin-left: 1rem;;
+
+            .item{
+                width: 100%;
+                height: 100%;
+                padding: 1rem;
+                border-radius: 15px;
+                
+                box-shadow: 
+                    inset 5px 5px 5px rgb(0 0 0 / 50%), 
+                    inset -5px -5px 5px rgb(27 27 27 / 50%), 
+                    5px 5px 5px rgb(0 0 0 / 5%), 
+                    -5px -5px 5px rgb(27 27 27 / 50%);
+                box-shadow: inset 0 0 32px var(--blue-jewel);
+                
+
+                img{
+                    background-image: cover;
+                    width: 100%;
+                    height: auto;
+                    
+                }
+            }
+
+            
+        }
+    }
+}
