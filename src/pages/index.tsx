@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Header } from '../components/Header'
-import { PageHome } from './PageHome'
+import  PageHome  from './PageHome'
 
 
 export default function Home() {
