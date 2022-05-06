@@ -7,7 +7,6 @@ export function Header(){
                 <img src="assets/next.png" alt="image/png" />
                 <nav>
                     <button className={styles.active}>Home</button>
-                    <button >Sobre</button>
                     <button >Projetos</button>
                     <button >Contato</button>         
                 </nav>
