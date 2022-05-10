@@ -79,7 +79,7 @@
 
         
         p{
-            padding: 0.5rem 2rem;
+            padding: 0 2rem;
             text-align: center;
             font-size: 1rem;
             font-weight: bold;
@@ -92,5 +92,20 @@
 @media (max-width: 622px){
     .container .content {
         height: 16rem;
+    }
+}
+@media (max-width: 474px){
+    .container .content {
+        height: 17rem;
+    }
+}
+@media (max-width: 438px){
+    .container .content {
+        height: 19rem;
+    }
+}
+@media (max-width: 445px){
+    .container .about {
+        width: 25rem;
     }
 }
