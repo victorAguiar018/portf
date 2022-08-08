@@ -30,7 +30,7 @@ export function Contato()  {
                     <div>
                         <div className={styles.contentForm}>
                             <label className={styles.label}>Nome :</label>
-                            <input type="text" autoFocus className={styles.input} required placeholder="Nome" name="name"/>
+                            <input type="text"  className={styles.input} required placeholder="Nome" name="name"/>
                         </div>
                         <div className={styles.contentForm}>
                             <label className={styles.label}>Email :</label>
