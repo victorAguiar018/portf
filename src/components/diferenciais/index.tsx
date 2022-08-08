@@ -25,7 +25,7 @@ export function Diferencias(){
                         <div className={styles.item}>
                             <img src="image/cleanCode.jpg" alt="clean code" />
                             <h4>Clean Code</h4>
-                            <p>Um codigo limpo de fácil manutenção e de fácil compreensão</p>
+                            <p>Um código limpo de fácil manutenção e de fácil compreensão</p>
                         </div>
                     </div>
                 </div>
