@@ -1,0 +1,110 @@
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.container{
+    width: 100%;
+    height:20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32rem;
+
+    .content{
+        max-width: 1120px;
+        height:20rem;
+
+        .contato{
+            font-family: 'Ubuntu', sans-serif;
+            width: 30rem;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 6rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100px;
+                background: linear-gradient(var(--blue-jewel),var(--white-50));
+                animation: rotate 7s linear infinite;
+                border-radius: 10px;
+                
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                background: var(--black-void);
+                inset: 2px;
+                border-radius: 6px;
+            }
+            h1{
+                text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 10px var(--blue-jewel);
+                font-size: 2.5rem;
+                font-weight: bold;
+                text-align: center;
+                margin:  auto;
+                z-index: 1;
+            }
+        }
+        .form{
+            margin-top: 6rem;
+
+            .label{
+                font-size: 1.1rem;
+                font-weight: bold;
+                font-family: 'Ubuntu', sans-serif;
+                margin-bottom: 10px;
+                text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 10px var(--blue-jewel);
+            }
+            .contentForm{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                textarea:focus, input:focus{
+                    box-shadow: inset 0 0 15px var(--blue-jewel);
+                }
+                .input{
+                    border-color: var(--blue-jewel);
+                    border-radius: 5px;
+                    height: 2.5rem;
+                    text-decoration: none;
+                    padding: 0.8rem;
+                    background-color: var(--black-void);
+                    color: var(--white-50);
+                }
+                .input, textarea {
+                    border-radius: 5px;
+                    padding: 1rem;
+                    background-color: var(--black-void);
+                    border-color: var(--blue-jewel);
+                    color: var(--white-50);
+
+                    &::-webkit-input-placeholder{
+                        color: var(--white-50);
+                        font-weight: bold;
+                    }  
+                }
+                .button{
+                    cursor: pointer;
+                    background-color: var(--blue-jewel);
+                    height: 4rem;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

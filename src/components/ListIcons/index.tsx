@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 
 export function ListIcons(){
     return(
-        <section className={styles.container}>
+        <section data-aos='fade-up' className={styles.container}>
             <div className={styles.content}>
                 <ul className={styles.contentIcons}>
                     <li className={styles.contentDescIcons}>

@@ -9,10 +9,11 @@
 
 .container {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 5rem;
     padding: 0 1rem;
 
     .about{
+        font-family: 'Ubuntu', sans-serif;
         width: 30rem;
         height: 5rem;
         display: flex;
@@ -77,11 +78,14 @@
         box-shadow: inset 0 0 32px var(--blue-jewel);
         border: 3px solid var(--blue-jewel);
 
+        &:hover{
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 10px var(--blue-jewel);
+        }
         
         p{
             padding: 0 2rem;
             text-align: center;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: bold;
             line-height: 2rem;
             margin-top: 2rem;
