@@ -1,4 +1,3 @@
-import styles from '../../styles/Home.module.scss'
 import { ListIcons } from '../../components/ListIcons'
 import { HomeDescName } from '../../components/HomeDescName'
 import { About } from '../../components/About'
@@ -19,10 +18,8 @@ function PageHome(){
    },[])
 
     return(
-        <main>
-            <section>
-                <HomeDescName/>
-            </section>
+        <main>     
+            <HomeDescName/>
             <WhatsappIcon/>
             <About/>
             <ListIcons/>
