@@ -1,4 +1,13 @@
+import Image from 'next/image'
 import styles from './styles.module.scss'
+import html5 from '../../../public/assets/html-5.svg'
+import css3 from '../../../public/assets/css-3.svg'
+import git from '../../../public/assets/git.svg'
+import react from '../../../public/assets/react.svg'
+import sass from '../../../public/assets/sass.svg'
+import js from '../../../public/assets/js.svg'
+import next from '../../../public/assets/next.png'
+import ts from '../../../public/assets/ts.svg'
 
 export function ListIcons(){
     return(
@@ -6,35 +15,83 @@ export function ListIcons(){
             <div className={styles.content}>
                 <ul className={styles.contentIcons}>
                     <li className={styles.contentDescIcons}>
-                        <img src="assets/html-5.svg" alt="html5" className={styles.animate}/>
+                        <Image 
+                            src={html5}
+                            alt="html5" 
+                            width={55}
+                            height={55}
+                            className={styles.animate}
+                        />
                         <p>HTML5</p>
                     </li>
                     <li className={styles.contentDescIcons}>
-                        <img src="assets/css-3.svg" alt="html5" className={styles.animate}/>
+                        <Image 
+                            src={css3}
+                            alt="css3" 
+                            width={55}
+                            height={55}
+                            className={styles.animate}
+                        />
                         <p>CSS3</p>
                     </li>
                     <li className={styles.contentDescIcons}>
-                        <img src="assets/git.svg" alt="git" className={styles.animate}/>
+                        <Image 
+                            src={git}
+                            alt="git" 
+                            width={55}
+                            height={55}
+                            className={styles.animate}
+                        />
                         <p>Git</p>
                     </li>
                     <li className={styles.contentDescIcons}>
-                        <img src="assets/react.svg" alt="react" className={styles.animate}/>
+                        <Image 
+                            src={react}
+                            alt="react" 
+                            width={55}
+                            height={55}
+                            className={styles.animate}
+                        />
                         <p>React</p>
                     </li>
                     <li className={styles.contentDescIcons}>
-                        <img src="assets/sass.svg" alt="Sass/scss" className={styles.animate}/>
+                        <Image 
+                            src={sass}
+                            alt="sass/scss" 
+                            width={55}
+                            height={55}
+                            className={styles.animate}
+                        />
                         <p>Sass/Scss</p>
                     </li>
                     <li className={styles.contentDescIcons}>
-                        <img src="assets/js.svg" alt="javascript" className={styles.animate}/>
+                        <Image 
+                            src={js}
+                            alt="javascript" 
+                            width={55}
+                            height={55}
+                            className={styles.animate}
+                        />
                         <p>Javascript</p>
                     </li>
                     <li className={styles.contentDescIcons}>
-                        <img src="assets/next.png" alt="next" className={styles.animate}/>
+                        <Image 
+                            src={next}
+                            alt="next" 
+                            width={55}
+                            height={55}
+                            className={styles.animate}
+                        />
                         <p>Next</p>
                     </li>
                     <li className={styles.contentDescIcons}>
-                        <img src="assets/ts.svg" alt="typescript" className={styles.animate}/>
+                        <Image 
+                            src={ts}
+                            alt="typescript" 
+                            width={55}
+                            height={55}
+                            className={styles.animate}
+                        />
                         <p>Typescript</p>
                     </li>
                 </ul>

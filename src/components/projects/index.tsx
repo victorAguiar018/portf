@@ -1,7 +1,15 @@
 import styles from './styles.module.scss';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import { ProjetoEstudo } from './projetoEstudo/index'
+import { ProjetoTrabalho } from './projetoTrabalho/index';
+import { GithubLink } from './githubLink';
+import Arrow from '../../../public/assets/arrow.svg'
+import Image from 'next/image';
 
 export function Projetos () {
+
+    const [handleClickButton, sethandleClickButton ] = useState(false);
+    const [activeButton, setActiveButton] = useState(true)
 
     const carousel = useRef(null);
 
@@ -13,10 +21,22 @@ export function Projetos () {
         e.preventDefault();
         carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
-    const github = () => {
-        
+    const handleClickButtonEstudo = (e) => {
+        e.preventDefault();
+        if(handleClickButton === true ){
+            sethandleClickButton(false);
+            setActiveButton(true);
+        }
+    }
+    const handleClickButtonTrabalho = (e) => {
+        e.preventDefault();
+        if(handleClickButton === false){
+             sethandleClickButton(true);
+             setActiveButton(false);
+        }
     }
 
+    
     return(
         <section className={styles.container}>
             <div className={styles.content} >
@@ -25,56 +45,40 @@ export function Projetos () {
                 </div>
                 <div className={styles.contentButtonProjetos}>
                     <div data-aos="fade-right" className={styles.contentButtonArea1}>
-                        <button className={styles.active}>Projetos de Estudos</button>    
+                        <button onClick={handleClickButtonEstudo} className={(activeButton ? `${styles.active}` : ``)}>Projetos de Estudos</button>    
                     </div>
                     <div data-aos="fade-left" className={styles.contentButtonArea2}>
-                        <button>Projetos de Trabalho</button>
+                        <button onClick={handleClickButtonTrabalho} className={(activeButton ? `` : `${styles.active}`)}>Projetos de Trabalho</button>
                     </div>
                 </div>
-                <div data-aos='fade-up' className={styles.projetosAcademicosContent} ref={carousel}>
-                    <div className={styles.projetoItem}>
-                        <img src="image/NetflixClone02.gif" alt="responsivo" />
-                    </div>
-                    <div className={styles.projetoItem}>
-                        <img src="image/dtmoney.gif" alt="responsivo" />
-                    </div>
-                    <div className={styles.projetoItem}>
-                        <div className={styles.breve}>
-                            <div className={styles.textEB}>
-                                <h1>Em Breve</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.projetoItem}>
-                        <div className={styles.breve}>
-                            <div className={styles.textEB}>
-                                <h1>Em Breve</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.projetoItem}>
-                        <div className={styles.breve}>
-                            <div className={styles.textEB}>
-                                <h1>Em Breve</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.projetoItem}>
-                        <div className={styles.breve}>
-                            <div className={styles.textEB}>
-                                <h1>Em Breve</h1>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
+
+                {handleClickButton ? (
+                    <ProjetoTrabalho carousel={carousel}/>
+                ) : (
+                    
+                    <ProjetoEstudo carousel={carousel}/>
+                ) }
+                
                 <div className={styles.carrosselContainer}>
-                    <button onClick={handleLeftClick}><img src="assets/arrow.svg" alt="left" /></button>
-                    <button onClick={handleRightClick} className={styles.leftCarrossel}><img src="assets/arrow.svg" alt="right" /></button>
+                    <button onClick={handleLeftClick}>
+                        <Image 
+                            src={Arrow} 
+                            alt="arrow left"
+                            width={50}
+                            height={50} 
+                        />
+                    </button>
+                    <button onClick={handleRightClick} className={styles.leftCarrossel}>
+                        <Image 
+                            src={Arrow} 
+                            alt="arrow Right"
+                            width={50}
+                            height={50} 
+                        />
+                    </button>
                 </div>
-                <div className={styles.linkGitHub}>
-                    <button className={styles.active}><a href="https://github.com/victorAguiar018?tab=repositories">Projetos Github</a></button>
-                </div>
-                <div className={styles.divisoria}></div>
+
+                <GithubLink/>
             </div>
         </section>
     );

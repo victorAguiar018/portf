@@ -21,6 +21,9 @@
         .contentFoto{
             width: 20rem;
             height:25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: var(--black-void);
             margin-top: 5rem;
             box-shadow: 
@@ -33,11 +36,7 @@
             border: 3px solid var(--blue-jewel);
         
         
-            img {
-                padding: 1rem;
-                background-image: cover;
-                width: 100%;
-                height: 100%;
+            .fotoPerfil {
                 border-radius: 20px;
             }
         }

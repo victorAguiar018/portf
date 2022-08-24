@@ -1,0 +1,94 @@
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.projetosAcademicosContent{
+    width: 100%;
+    height: 22rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+    overflow-x: hidden;
+
+     .projetoItem{
+         max-width: 545px;
+         margin-left: 1rem;
+         height: 20rem;
+         flex: none;
+         box-shadow: 
+             inset 5px 5px 5px rgb(0 0 0 / 50%), 
+             inset -5px -5px 5px rgb(27 27 27 / 50%), 
+             5px 5px 5px rgb(0 0 0 / 5%), 
+             -5px -5px 5px rgb(27 27 27 / 50%);
+         border-radius: 15px;
+         padding: 1rem 15px;
+         align-items: center;
+         overflow: hidden;
+
+         img{
+             width: 100%;
+             height: 18rem;
+             background-image: cover;
+             border-radius: 10px;
+         }
+         .breve{
+           display: flex;
+           width: 545px;
+           height: 20rem;
+           text-align: center;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+
+           .textEB{
+             display: flex;
+             background-color: var(--blue-jewel);
+             width: 15rem;
+             height: 15rem;
+             border-radius: 50%;
+             justify-content: center;
+             text-align: center;
+             align-items: center;
+             margin-bottom: 30px ;
+
+             font-family: 'Ubuntu', sans-serif;
+             position: relative;
+             overflow: hidden;
+             border-radius: 50%;
+             
+             &::before{
+                 content: '';
+                 position: absolute;
+                 width: 100%;
+                 height: 100px;
+                 background: linear-gradient(var(--blue-jewel),var(--white-50));
+                 animation: rotate 7s linear infinite;
+                 border-radius: 10px;
+                 
+             }
+             &::after{
+                 content: '';
+                 position: absolute;
+                 background: var(--black-void);
+                 inset: 6px;
+                 border-radius: 50%;
+             }
+             h1{
+                 text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 10px var(--blue-jewel);
+                 font-size: 2rem;
+                 font-weight: bold;
+                 text-align: center;
+                 margin:  auto;
+                 z-index: 2;
+             }
+
+          }
+         }
+     }
+ }
