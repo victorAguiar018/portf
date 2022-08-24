@@ -15,7 +15,7 @@ export function Header(){
         scroll.scrollTo(0, 'smooth')
     })
 
-    const [activeButton, setActiveButton] = useState(0);
+    const [activeButton, setActiveButton] = useState(1);
     
 
 
