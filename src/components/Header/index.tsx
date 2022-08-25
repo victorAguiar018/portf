@@ -12,37 +12,29 @@ export function Header(){
  
 
     useEffect(()=>{
-        scroll.scrollTo(0, 'smooth')
-    })
+        scroll.scrollTo(0, 'smooth');
+    },[])
 
     const [activeButton, setActiveButton] = useState(1);
     
 
 
-    function handleScrollHome (e) {
-        e.preventDefault();
-        setActiveButton(0);
+    function handleScrollHome () {
         scroll.scrollTo(0, {smooth: true}, {delay: 500});
         setActiveButton(1);    
     }
-    function handleScrollAbout (e) {
-        e.preventDefault();
-        setActiveButton(0)
+    function handleScrollAbout () {
         scroll.scrollTo(710, {smooth: true}, {delay: 500});
-        setActiveButton(2)
+        setActiveButton(2);
     }
-    function handleScrollProjetos (e) {
-        e.preventDefault();
-        setActiveButton(0);
-        scroll.scrollTo(2280, {smooth: true}, {delay: 500});
-        setActiveButton(3)    
+    function handleScrollProjetos () {
+        scroll.scrollTo(2280 , {smooth: true}, {delay: 500});
+        setActiveButton(3);  
     }
     
-    function handleScrollContato (e) {
-        e.preventDefault();
-        setActiveButton(0);
+    function handleScrollContato () {
         scroll.scrollTo(3400, {smooth: true}, {delay: 500});
-        setActiveButton(4)
+        setActiveButton(4);
     }
     return(
         <header className={styles.headerContainer}>
