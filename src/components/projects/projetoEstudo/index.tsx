@@ -10,19 +10,15 @@ export function ProjetoEstudo({carousel}) {
         <>
             <div data-aos='fade-up' className={styles.projetosAcademicosContent} ref={carousel}>
                     <div className={styles.projetoItem}>
-                        <Image 
-                            src={NetflixClone}
+                        <img 
+                            src='image/NetflixClone02.gif'
                             alt="NetflixClone"
-                            width={515}
-                            height={288}
                         />
                     </div>
                     <div className={styles.projetoItem}>
-                        <Image 
-                            src={DtMoney}
+                        <img 
+                            src='image/dtmoney.gif'
                             alt="Projeto dtmoney"
-                            width={515}
-                            height={288} 
                         />
                     </div>
                     <div className={styles.projetoItem}>

@@ -15,7 +15,7 @@
     max-width: 1120px;
     height: 6rem;
     margin:  auto;
-    padding: 0 1rem;
+    padding: 0 5rem;
 
     display: flex;
     justify-content: space-between;
@@ -90,20 +90,5 @@
                 
                 
             }   
-    }
-}
-
-@media (max-width: 768px){
-    .headerContent nav button{
-        margin-left: 1rem;
-        font-size: 1.1rem;
-        padding: 1rem 2rem;
-    }
-}
-
-@media (max-width: 580px){
-    .headerContent nav button{
-       margin-left: 1rem;
-       padding: 1rem 1.2rem;
     }
 }

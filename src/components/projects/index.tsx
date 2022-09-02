@@ -62,7 +62,7 @@ export function Projetos () {
                 <div className={styles.carrosselContainer}>
                     <button onClick={handleLeftClick}>
                         <Image 
-                            src={Arrow} 
+                            src={Arrow}
                             alt="arrow left"
                             width={50}
                             height={50} 

@@ -8,8 +8,8 @@
 }
 
 .projetosAcademicosContent{
-    width: 100%;
-    height: 22rem;
+    width: 1120px;
+    height: 23rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     overflow-x: hidden;
 
      .projetoItem{
-         max-width: 545px;
+         width: 545px;
          margin-left: 1rem;
          height: 20rem;
          flex: none;
@@ -91,4 +91,23 @@
           }
          }
      }
+ }
+
+ @media(max-width: 1100px){
+    .projetosAcademicosContent{
+        width: 1024px;
+
+        .projetoItem{
+            max-width: 495px;
+        }
+    }
+ }
+ @media(max-width: 1024px){
+    .projetosAcademicosContent{
+        width: 980px;
+
+        .projetoItem{
+            max-width: 475px;
+        }
+    }
  }

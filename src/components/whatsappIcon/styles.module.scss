@@ -1,7 +1,10 @@
 
 
 .container{
- 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10; 
 
     .contentIconWhatsApp{
         display: flex;
@@ -10,9 +13,6 @@
         border: 3px solid var(--blue-jewel);
         align-items: center;
         justify-content: center;
-        position: fixed;
-        right: 0;
-        margin-right: 4rem;
         border-radius: 50%;
         cursor: pointer;
 

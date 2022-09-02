@@ -10,7 +10,6 @@
 .container {
     width: 100%;
     margin-top: 5rem;
-    padding: 0 1rem;
 
     .about{
         font-family: 'Ubuntu', sans-serif;
@@ -61,14 +60,17 @@
     .content{
         max-width: 1120px;
         height: 12rem;
-        margin: auto;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
         border: 1px solid var(--blue-jewel);
         border-radius: 10px;
         margin-top: 1rem;
-        padding: 0 2rem;
+        padding: 0 1rem;
 
         background-color: var(--black-void);
-        margin-top: 1rem;
+
         box-shadow: 
             inset 5px 5px 5px rgb(0 0 0 / 50%), 
             inset -5px -5px 5px rgb(27 27 27 / 50%), 
@@ -83,7 +85,7 @@
         }
         
         p{
-            padding: 0 2rem;
+            padding: 0 1rem;
             text-align: center;
             font-size: 0.9rem;
             font-weight: bold;
@@ -92,15 +94,28 @@
         }
     }
 }
-
+@media(max-width: 1030px){
+    .container{
+        .content{
+            max-width: 1024px;
+        }
+    }
+}
+@media(max-width: 799px){
+    .container{
+        .content{
+            height: 13rem; 
+        }
+    }
+}
 @media (max-width: 622px){
     .container .content {
-        height: 16rem;
+        height: 18rem;
     }
 }
 @media (max-width: 474px){
     .container .content {
-        height: 17rem;
+        height: 18rem;
     }
 }
 @media (max-width: 438px){

@@ -24,11 +24,11 @@ export function Header(){
         setActiveButton(1);    
     }
     function handleScrollAbout () {
-        scroll.scrollTo(710, {smooth: true}, {delay: 500});
+        scroll.scrollTo(750, {smooth: true}, {delay: 500});
         setActiveButton(2);
     }
     function handleScrollProjetos () {
-        scroll.scrollTo(2280 , {smooth: true}, {delay: 500});
+        scroll.scrollTo(2250 , {smooth: true}, {delay: 500});
         setActiveButton(3);  
     }
     
