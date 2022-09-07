@@ -2,6 +2,7 @@ import styles from './styles.module.scss'
 import { useEffect, useState } from 'react'
 import Image from 'next/image';
 import LogoHeader from '../../../public/assets/next.png'
+import Link from 'next/link';
 
 
 
@@ -40,15 +41,12 @@ export function Header(){
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
                 <button className={styles.buttonImg} onClick={handleScrollHome}>
-                    <Image 
-                        src={LogoHeader}
-                        alt='logoPortifolio'
-                        width={55}
-                        height={55}
-                    />
+                    <h1>Victor Aguiar</h1>
                 </button>
                 <nav>
-                    <button onClick={handleScrollHome} className={activeButton===1 ? `${styles.active}` : ''}>Home</button>
+                    <button onClick={handleScrollHome} className={activeButton===1 ? `${styles.active}` : ''}>
+                        Home
+                    </button>
                     <button onClick={handleScrollAbout} className={activeButton===2 ? `${styles.active}` : ''} >Sobre</button>
                     <button onClick={handleScrollProjetos} className={activeButton===3 ? `${styles.active}` : ''}>Projetos</button>
                     <button onClick={handleScrollContato} className={activeButton===4 ? `${styles.active}` : ''}>Contato</button>        
