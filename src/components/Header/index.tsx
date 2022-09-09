@@ -29,7 +29,7 @@ export function Header(){
         setActiveButton(2);
     }
     function handleScrollProjetos () {
-        scroll.scrollTo(2250 , {smooth: true}, {delay: 500});
+        scroll.scrollTo(2390 , {smooth: true}, {delay: 500});
         setActiveButton(3);  
     }
     

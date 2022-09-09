@@ -8,7 +8,7 @@
 }
 .container{
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
     margin-top: 3rem;
 
     .content{
@@ -105,11 +105,12 @@
     }
 
     .divisoria{
+        
         margin: auto;
         width: 40rem;
         height: 0.3px;
         background-color: var(--blue-jewel);
-        margin-top: 15rem;
+        margin-top: 20rem;
         box-shadow: 0 0 30px 4px var(--blue-jewel);
     }
 }
