@@ -94,24 +94,23 @@
                 
             }
             .contentDesc{
-                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                font-size: 1.3rem;
                 text-align: center;
+                align-items: center;
                 margin-top: 2rem;
                 font-weight: bold;
                 text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 10px var(--blue-jewel);
             }
-        }
-    
+        }  
     }
-
     .divisoria{
-        
-        margin: auto;
+        margin: 0 auto;
+        margin-top: 14rem;
         width: 40rem;
         height: 0.3px;
-        background-color: var(--blue-jewel);
-        margin-top: 20rem;
-        box-shadow: 0 0 30px 4px var(--blue-jewel);
+        background-color: var(--blue-jewel);            box-shadow: 0 0 30px 4px var(--blue-jewel);
     }
 }
 

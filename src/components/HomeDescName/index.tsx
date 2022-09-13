@@ -6,7 +6,6 @@ export function HomeDescName(){
     return(
         <section  className={styles.container}>
             <div className={styles.content}>
-                
                 <div className={styles.contentInfo} data-aos='fade-left'>
                     <div className={styles.contentInfoName}>
                         <h1>Victor Aguiar</h1>
