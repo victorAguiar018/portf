@@ -10,6 +10,14 @@
 .container {
     width: 100%;
 
+    .divisoria{
+        margin: 0 auto;
+        width: 40rem;
+        height: 0.3px;
+        background-color: var(--blue-jewel);           
+        box-shadow: 0 0 30px 4px var(--blue-jewel);
+    }
+
     .about{
         font-family: 'Ubuntu', sans-serif;
         width: 30rem;

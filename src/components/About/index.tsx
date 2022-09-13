@@ -6,6 +6,7 @@ export function About(){
 
     return(
         <section className={styles.container}>
+            <div  className={styles.divisoria}></div>
             <div data-aos='fade-right' className={styles.about}>
                 <h1>Sobre</h1>
             </div>

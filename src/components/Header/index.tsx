@@ -25,16 +25,16 @@ export function Header(){
         setActiveButton(1);    
     }
     function handleScrollAbout () {
-        scroll.scrollTo(750, {smooth: true}, {delay: 500});
+        scroll.scrollTo(800, {smooth: true}, {delay: 500});
         setActiveButton(2);
     }
     function handleScrollProjetos () {
-        scroll.scrollTo(2390 , {smooth: true}, {delay: 500});
+        scroll.scrollTo(2615 , {smooth: true}, {delay: 500});
         setActiveButton(3);  
     }
     
     function handleScrollContato () {
-        scroll.scrollTo(3400, {smooth: true}, {delay: 500});
+        scroll.scrollTo(3800, {smooth: true}, {delay: 500});
         setActiveButton(4);
     }
     return(
